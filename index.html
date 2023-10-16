@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motupatlu</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
+    </script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ededed;
+        }
+
+        .slider_demo,
+        .img-wish {
+            text-align: center;
+        }
+
+        .main {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0 auto;
+            text-align: center;
+            width: 400px;
+            display: block;
+        }
+
+
+        p {
+            font-size: 20px;
+            color: #6c4b92;
+        }
+
+        h1 {
+            color: #fdb12a;
+            font-weight: bold;
+        }
+
+        .slick-dots li.slick-active button:before {
+            opacity: .75;
+            color: #fdb12a !important;
+        }
+
+        .slick-dots li button:before {
+            font-size: 6px;
+            line-height: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            content: '•';
+            text-align: center;
+            opacity: .25;
+            color: #fdb12a !important;
+        }
+
+        .slick-dots li {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 18px;
+            margin: 0px 6px;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .img-wish {
+            text-align: center !important;
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            height: 600px;
+            border-radius: 8px;
+            /* box-shadow: 0px 2px 6px 0px grey; */
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        .img-wish img {
+            display: inline;
+        }
+
+        .mt-10 {
+            margin-top: 10px;
+        }
+
+        .slick-next {
+            right: -94px !important;
+        }
+
+        .slick-prev {
+            left: -94px !important;
+        }
+
+        .slick-next:before,
+        .slick-prev:before {
+            font-size: 40px;
+            line-height: 1;
+            opacity: .75;
+            color: #fdb12a;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="main">
+        <h2>Motupatlu Slick-Carousel</h2>
+        <div class="slider slide-show mt-10">
+
+            <div class="img-wish">
+                <img src="assets/img/1.png" alt="" />
+                <h1>Motu</h1>
+                <p>Khaali pet dimaag ki batti nahin jalti”! Motu is a village simpleton from Fufuri Nagariya. A warm,
+                    friendly and jovial person, who dreams big but unfortunately lands in trouble most of the times, His
+                    only love is FOOD, a big fan of samosa</p>
+            </div>
+            <div class="img-wish">
+                <img src="assets/img/2.png" alt="" />
+                <h1>Chingum</h1>
+                <p>A Rajinikanth devout with a strong south Indian accent, Chingam is a solicitous police inspector. He
+                    takes pride in the fact that no criminal can ever get away frm him. A lethal combination for
+                    righteous and hilarious.</p>
+            </div>
+            <div class="img-wish">
+                <img src="assets/img/3.png" alt="" />
+                <h1>Ghasitaram</h1>
+                <p>A sweet talker, with a strong Bengali accent, he is the “mithi churi” of the gang.</p>
+            </div>
+            <div class="img-wish">
+                <img src="assets/img/4.png" alt="" />
+                <h1>Dr.Jhatka</h1>
+                <p>A mad scientist, with multiple PhDs, Dr. Jhatka is always in search of guinea pigs for his new
+                    experiments.</p>
+            </div>
+            <div class="img-wish">
+                <img src="assets/img/5.png" alt="" />
+                <h1>Jon The Don</h1>
+                <p>An aspiring don, John and his two sidekicks add to the craziness and absurdity. John’s ambition is to
+                    become the most feared and dangerous Don. His plans, however, always fail miserably and end up being
+                    a laugh riot.</p>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</body>
+<script>
+    $('.slide-show').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: true,
+        fade: true,
+    });
+</script>
+
+</html>
